@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Kwitter </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"> </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="kwitter_sala.js"></script>
+</head>
+<body>
+    <div class="contener">
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger"> Logout </button>
+        <center>
+            <h1 class="header">
+                Kwitter
+                <sup>
+                    <img src="m2.png">
+                </sup>
+            </h1>
+            <h3 id="nome_usuario" class="color_white"></h3>
+            <div class="form-group input_sala">
+                <label> Adicionar Sala </label>
+                <input type="text" id="nome_sala" class="form-control" placeholder="Nome da Sala">
+            </div>
+
+            <button id="button-sala" class="btn btn-success" onclick="addsala()"> Adicionar Sala </button>
+            <h3 id="sala_trending" class="color_white"> SALAS TRENDING </h3>
+            <div id="salas"> </div>
+        </center>
+    </div>
+</body>
+</html>
